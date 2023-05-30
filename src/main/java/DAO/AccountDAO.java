@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AccountDAO {
+    // gets a list of Account
 
     public List<Account> getAllUserAccount() {
         Connection con = ConnectionUtil.getConnection();
@@ -36,6 +37,7 @@ public class AccountDAO {
         return null;
     }
 
+    // Creates an account
     public Account createAccount(Account account) {
         Connection con = ConnectionUtil.getConnection();
         try {

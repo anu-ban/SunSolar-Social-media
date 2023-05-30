@@ -1,6 +1,5 @@
 package Controller;
 
-import DAO.MessageDAO;
 import Model.Account;
 import Model.Message;
 import Service.AccountService;
@@ -8,17 +7,14 @@ import Service.MessageService;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 
-import java.sql.SQLException;
 import java.util.List;
-
-import org.h2.util.json.JSONObject;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
- * TODO: You will need to write your own endpoints and handlers for your
+ * will need to write your own endpoints and handlers for your
  * controller. The endpoints you will need can be
  * found in readme.md as well as the test cases. You should
  * refer to prior mini-project labs and lecture materials for guidance on how a
